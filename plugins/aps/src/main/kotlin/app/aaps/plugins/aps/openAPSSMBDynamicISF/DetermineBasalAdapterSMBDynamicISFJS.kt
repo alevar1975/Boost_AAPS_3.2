@@ -33,7 +33,7 @@ var getIsfByProfile = function (bg, profile) {
     if (bg > cap) bg = (cap + (bg - cap)/3);
     var sens_BG = Math.log((bg / profile.insulinDivisor) + 1);
     var scaler = Math.log((profile.normalTarget / profile.insulinDivisor) + 1) / sens_BG;
-    return profile.sensNormalTarget * (1 - (1 - scaler) * profile.dynISFvelocity);
+    return profile.sensNormalTarget * (1 - (1 - scaler) * profile.dynISFVelocity);
 }"""
 
     @Suppress("SpellCheckingInspection")
