@@ -165,7 +165,7 @@ class IsfCalculatorImpl @Inject constructor(
         profileJson?.let { p ->
             p.put("dynISFBgCap", bgCap )
             p.put("dynISFBgCapped", result.bgCapped)
-            p.put("dynISFvelocity", result.velocity)
+            p.put("dynISFVelocity", result.velocity)
             p.put("sensNormalTarget", result.isfNormalTarget)
             p.put("variable_sens", result.isf)
             p.put("insulinDivisor", result.insulinDivisor)
