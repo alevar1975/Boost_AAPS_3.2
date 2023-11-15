@@ -111,7 +111,7 @@ function enable_smb(
 }
 
 
-/*function autoISF(sens, target_bg, profile, glucose_status, meal_data, autosens_data,
+function autoISF(sens, target_bg, profile, glucose_status, meal_data, autosens_data,
 sensitivityRatio)
 {   // #### mod 7e: added switch fr autoISF ON/OFF
     if ( !profile.use_autoisf ) {
@@ -147,7 +147,7 @@ sensitivityRatio)
         console.error("autoISF by-passed; BG is only "+dura05+"m at level "+avg05);
     }
     return sens;
-}*/
+}
 
 
 var determine_basal = function determine_basal(glucose_status, currenttemp, iob_data, profile, autosens_data, meal_data, tempBasalFunctions, microBolusAllowed, reservoir_data, currentTime, flatBGsDetected) {
